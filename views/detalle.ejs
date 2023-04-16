@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/stylesheets/detalle.css">
+    <script src="https://kit.fontawesome.com/4d18b4db01.js" crossorigin="anonymous"></script>
+    <title><%= pokemon.forms[0].name  %></title> 
+<body>
+   <a href="/" class="back"><i class="fa-solid fa-arrow-left-long fa-beat"></i></a>
+    <div class="container">
+        <h1 class="pokemon-name"><%= pokemon.forms[0].name %></h1>
+        <div class="pokemon-image">
+            <img src="<%= pokemon.sprites.front_default %>">
+        </div>
+        <div class="pokemon-details">
+            <ul>
+                <li><strong>Height:</strong><%= pokemon.height %> decimetres</li>
+                <li><strong>Weight:</strong><%= pokemon.weight %> hectograms</li>
+                <li><strong>Type:</strong><%= pokemon.types[0].type.name %></li>
+                <li><strong>Abilities:</strong>
+                    <ul>
+                        <% for (var i = 0; i < pokemon.abilities.length; i++) { %>
+                            <li><%= pokemon.abilities[i].ability.name %></li>
+                        <% } %>
+                    </ul>
+                </li>
+                <li><strong>Base Experience:</strong><%= pokemon.base_experience %> points</li>
+                <li><strong>Stats:</strong>
+                    <ul>
+                        <% for (var i = 0; i < pokemon.stats.length; i++) { %>
+                            <li><strong><%= pokemon.stats[i].stat.name %>:</strong> <%= pokemon.stats[i].base_stat %></li>
+                        <% } %>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer">
+        <p>Creado por Marco Savarino</p>
+        <i class="fa-brands fa-github"></i>
+    </div>
+</body>
+</html>
