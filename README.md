@@ -31,9 +31,8 @@ Para instalar y ejecutar la aplicación en tu entorno local, sigue estos pasos:
 1. Clona el repositorio de la aplicación desde [URL del repositorio].
 2. Abre la terminal y navega hasta la carpeta del proyecto.
 3. Ejecuta el comando `npm install` para instalar las dependencias necesarias.
-4. Crea un archivo `.env` en la raíz del proyecto y configura las variables de entorno necesarias, como la API_KEY de la API de Pokemon.
-5. Ejecuta el comando `node app.js` para iniciar la aplicación.
-6. Abre tu navegador y accede a `http://localhost:3000` para ver la aplicación en funcionamiento.
+4. Ejecuta el comando `node app.js` para iniciar la aplicación.
+5. Abre tu navegador y accede a `http://localhost:3000` para ver la aplicación en funcionamiento.
 
 ¡Listo! Ahora puedes explorar la Pokedex y obtener información detallada sobre tus pokemones favoritos.
 
